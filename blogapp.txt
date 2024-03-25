@@ -1,0 +1,23 @@
+# add this path to the setting.json to solve the problem
+
+{
+    "python.analysis.extraPaths": [
+        "./blog"
+    ]
+}
+# installed app name
+dont add the name of the app not been used (ninja)
+# tcp / udp problem 
+check server is running
+# add blog.veiws instead of views for detecting the app name and file in there
+# using windows in this project was been the bigest mistake
+# configing debuger is needed
+# enviroment confilicting with global enviroment (djcelery)
+source activate
+# authentication problems 
+# udating models but not detected by migrate in app
+python manage.py migrate blog
+# adding dispatch in ciew for caching
+#using pytest instead of test for better analysis and detection filesizeformat
+#add this line of code for authentication problem after login as admin
+path('api-token-auth/', ObtainAuthToken.as_view(), name='api_token_auth'),
